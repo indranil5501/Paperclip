@@ -1,0 +1,31 @@
+---Jai Sri Ganesh---
+
+~~~~~~~~~~~~~~~~~~~~~~~~~X~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Signin----->>
+Edittext- @+id/input_num ->enter_num ----(export to otpsingin)----> mobile
+Button- @+id/otp_bot ->otp_bot
+ProgressBar- @+id/prgbar_singin -> prgbar;
+
+otpsingin------>>
+Editext- @+id/show_num --------> mobile
+Edittext- @+id/write_otp ->input_otp
+Button- @+id/otp_verification ->verifi_button
+ProgressBar- @+id/prgbar_otpsingin -> prgbar;
+
+
+Createpassword----->>
+EditText- @+id/new_pass ->newpass;
+EditText- @+id/confirm_pass ->confpass;
+Button- @+id/submit_new_pass ->sub_npas;
+ProgressBar- @+id/prgbar_createpass -> prgbar;
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~X~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+login----->>
+Edittext- @+id/login_num ->input_number
+Edittext-@+id/login_password ->input_password
+Button- @+id/login_button ->login
+Progressbar- @+id/prgbar_login ->prgbar

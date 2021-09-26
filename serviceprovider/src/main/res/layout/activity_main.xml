@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="242dp"
+            android:layout_height="471dp"
+            app:srcCompat="@drawable/paperclip" />
+
+        <TextView
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/baloo_chettan"
+            android:text="@string/paperclip"
+            android:textAlignment="center"
+            android:textColor="#0E0E0E"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="~🛠 Service Provider App 🛠~"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baloo_chettan"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
