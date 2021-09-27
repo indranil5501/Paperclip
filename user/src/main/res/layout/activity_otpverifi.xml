@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Enternum"
+    tools:context=".Otpverifi"
     android:scrollbars="none"
     android:background="@drawable/backg">
     <LinearLayout
@@ -13,48 +13,39 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="218dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/otp" />
+
         <TextView
             android:layout_width="314dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="0dp"
             android:fontFamily="@font/baloo_chettan"
-            android:text="@string/welcome"
+            android:text="@string/sdfghgfdxfgh"
             android:textColor="#0E0E0E"
             android:textSize="30sp"
             android:textAlignment="center"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="160dp"
-            android:layout_height="149dp"
-            android:layout_marginTop="5dp"
-            app:srcCompat="@drawable/send" />
-
         <TextView
-            android:layout_width="375dp"
+            android:id="@+id/shownumb"
+            android:layout_width="314dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/baloo_chettan"
-            android:text="@string/dfghhgcv"
             android:textColor="#0E0E0E"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textAlignment="center" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/enter_your_modile_number_to_get_otp"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:fontFamily="@font/baloo_chettan"
-            android:layout_marginTop="10dp"/>
-
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textStyle="bold" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="25dp"
             android:layout_marginStart="60dp"
             android:layout_marginEnd="60dp"
@@ -62,57 +53,50 @@
             android:orientation="horizontal"
             android:background="@drawable/bgbox">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:text="@string/lk"
-                android:textSize="30dp"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
             <EditText
-                android:id="@+id/ipnum"
-                android:layout_width="wrap_content"
+                android:id="@+id/otpwrt"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="@string/random"
                 android:background="@null"
+                android:hint="@string/xgfchjuijhjghf"
                 android:imeOptions="actionDone"
-
                 android:importantForAutofill="no"
                 android:inputType="number"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                />
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
         </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
             <Button
-                android:id="@+id/otpb"
+                android:id="@+id/otpverifi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="@string/get_otp"
-                android:textSize="20sp"
-                android:fontFamily="@font/baloo_chettan"
+                android:layout_margin="40dp"
                 android:background="@drawable/bgbot"
-                android:layout_margin="40dp"/>
+                android:fontFamily="@font/baloo_chettan"
+                android:text="@string/ftdfguio"
+                android:textAlignment="center"
+                android:textSize="20sp" />
 
 
 
             <ProgressBar
-                android:id="@+id/prgbarnum"
+                android:id="@+id/prgbarotp"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:visibility="gone"/>
 
         </FrameLayout>
+
 
     </LinearLayout>
 </ScrollView>

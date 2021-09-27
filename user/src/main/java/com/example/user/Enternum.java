@@ -36,7 +36,8 @@ public class Enternum extends AppCompatActivity {
 
                         //code for fire base
 
-                        Intent intent=new Intent(getApplicationContext(),Demone.class);
+                        Intent intent=new Intent(getApplicationContext(),Otpverifi.class);
+                        intent.putExtra("mob",numb.getText().toString());
                         startActivity(intent);
 
 

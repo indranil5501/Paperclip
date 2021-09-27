@@ -21,7 +21,7 @@ public class Singup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_singup);
 
-        //
+
         enter_num =(EditText) findViewById(R.id.input_num);
         otp_bot =(Button) findViewById (R.id.otp_bot);
         prgbar=(ProgressBar) findViewById(R.id.prgbar_singin);

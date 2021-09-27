@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Otpverifi"
+            android:exported="true" />
+        <activity
             android:name=".Enternum"
             android:exported="true" />
         <activity
