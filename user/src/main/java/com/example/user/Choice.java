@@ -21,7 +21,7 @@ public class Choice extends AppCompatActivity {
         sing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), Demone.class);
+                Intent intent=new Intent(getApplicationContext(), Enternum.class);
                 startActivity(intent);
 
             }

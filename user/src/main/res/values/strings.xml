@@ -6,7 +6,12 @@
     <string name="welcome">Welcome</string>
     <string name="please_enter_your_userid_and_password">Please enter your Phone number and Password</string>
     <string name="phone_number">Phone number</string>
-    <string name="password">Password</string>
-    <string name="log_in">log in</string>
-    <string name="login">Login</string>
+    <string name="send">Send</string>
+    <string name="enter_your_modile_number_to_get_otp">Enter your modile number to get OTP</string>
+    <string name="lk">+91</string>
+    <string name="random">96XXXXXXX3</string>
+    <string name="get_otp">Get otp</string>
+    <string name="chgcgh">Log in</string>
+    <string name="ffhgfgnvhnv">Log in</string>
+    <string name="sdzfgyf">Password</string>
 </resources>

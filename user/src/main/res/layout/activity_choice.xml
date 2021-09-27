@@ -50,7 +50,7 @@
             android:layout_margin="40dp"
             android:background="@drawable/bgbot"
             android:fontFamily="@font/baloo_chettan"
-            android:text="@string/log_in"
+            android:text="@string/chgcgh"
             android:textAlignment="center"
             android:textSize="20sp" />
 
