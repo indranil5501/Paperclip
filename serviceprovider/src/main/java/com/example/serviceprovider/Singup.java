@@ -22,9 +22,9 @@ public class Singup extends AppCompatActivity {
         setContentView(R.layout.activity_singup);
 
         //
-        enter_num = findViewById(R.id.input_num);
-        otp_bot =findViewById (R.id.otp_bot);
-        prgbar= findViewById(R.id.prgbar_singin);
+        enter_num =(EditText) findViewById(R.id.input_num);
+        otp_bot =(Button) findViewById (R.id.otp_bot);
+        prgbar=(ProgressBar) findViewById(R.id.prgbar_singin);
 
         otp_bot.setOnClickListener(new View.OnClickListener() {
             @Override

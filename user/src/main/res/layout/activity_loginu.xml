@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".Loginu"
     android:scrollbars="none"
     android:background="@drawable/backg">
     <LinearLayout
@@ -36,7 +36,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/please_enter_your_userid_and_password"
+            android:text="Please enter your userID and Password "
             android:gravity="center"
             android:textSize="20sp"
             android:fontFamily="@font/baloo_chettan"
@@ -62,19 +62,19 @@
                 />
 
             <EditText
-                android:id="@+id/login_numu"
+                android:id="@+id/lognum"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:hint="@string/phone_number"
+                android:hint="Phone number"
                 android:background="@null"
                 android:imeOptions="actionDone"
+
                 android:importantForAutofill="no"
                 android:inputType="number"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30sp"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold"/>
 
 
         </LinearLayout>
@@ -95,10 +95,11 @@
                 android:inputType="numberPassword"
                 android:textSize="30dp"
                 android:textColor="@color/black"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
 
             <EditText
-                android:id="@+id/login_passwordu"
+                android:id="@+id/logpassword"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:hint="@string/password"
@@ -122,11 +123,11 @@
 
 
             <Button
-                android:id="@+id/login_buttonu"
+                android:id="@+id/logbutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="@string/log_in"
+                android:text="@string/login"
                 android:textSize="20sp"
                 android:fontFamily="@font/baloo_chettan"
                 android:background="@drawable/bgbot"
@@ -135,7 +136,7 @@
 
 
             <ProgressBar
-                android:id="@+id/prgbar_login"
+                android:id="@+id/prgbarlogin"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"

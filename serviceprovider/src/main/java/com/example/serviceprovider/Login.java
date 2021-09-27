@@ -22,10 +22,10 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        input_number=findViewById(R.id.login_num);
-        input_password=findViewById(R.id.login_password);
-        login=findViewById(R.id.login_button);
-        prgbar=findViewById(R.id.prgbar_login);
+        input_number=(EditText) findViewById(R.id.login_num);
+        input_password=(EditText) findViewById(R.id.login_password);
+        login=(Button) findViewById(R.id.login_button);
+        prgbar=(ProgressBar) findViewById(R.id.prgbar_login);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override

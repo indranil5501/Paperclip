@@ -23,10 +23,10 @@ public class Createpassword extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createpassword);
 
-        newpass= findViewById(R.id.new_pass);
-        confpass =findViewById(R.id.confirm_pass);
-        sub_npas= findViewById(R.id.submit_new_pass);
-        prgbar=findViewById(R.id.prgbar_createpass);
+        newpass=(EditText) findViewById(R.id.new_pass);
+        confpass =(EditText) findViewById(R.id.confirm_pass);
+        sub_npas=(Button) findViewById(R.id.submit_new_pass);
+        prgbar=(ProgressBar) findViewById(R.id.prgbar_createpass);
 
         sub_npas.setOnClickListener(new View.OnClickListener() {
             @Override

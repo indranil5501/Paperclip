@@ -30,7 +30,7 @@ public class Choice extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),Login.class);
+                Intent intent=new Intent(getApplicationContext(),Loginu.class);
                 startActivity(intent);
 
             }

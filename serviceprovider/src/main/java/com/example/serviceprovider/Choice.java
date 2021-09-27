@@ -17,8 +17,8 @@ public class Choice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choice);
 
-        sing=findViewById(R.id.sing_in);
-        log=findViewById(R.id.log_in);
+        sing=(Button) findViewById(R.id.sing_in);
+        log=(Button) findViewById(R.id.log_in);
 
         sing.setOnClickListener(new View.OnClickListener() {
             @Override

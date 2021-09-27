@@ -24,9 +24,9 @@ public class Otpverifi extends AppCompatActivity {
         setContentView(R.layout.activity_otpverifi);
 
 
-        input_otp= findViewById(R.id.write_otp);
-        verifi_button=findViewById(R.id.otp_verification);
-        prgbar=findViewById(R.id.prgbar_otpsingin);
+        input_otp=(EditText) findViewById(R.id.write_otp);
+        verifi_button=(Button) findViewById(R.id.otp_verification);
+        prgbar=(ProgressBar) findViewById(R.id.prgbar_otpsingin);
 
         //to get the number from singin(up) to otp verification number
         TextView textView=findViewById(R.id.show_num);
