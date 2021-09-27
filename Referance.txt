@@ -6,21 +6,21 @@
 Signup----->>
 Edittext- @+id/input_num ->enter_num ----(export to otpsingin)----> mobile
 Button- @+id/otp_bot ->otp_bot
-ProgressBar- @+id/prgbar_singin -> prgbar;
+ProgressBar- @+id/prgbar_singin -> prgbar
 
 
 otpverifi------>>
 Editext- @+id/show_num --------> mobile
 Edittext- @+id/write_otp ->input_otp
 Button- @+id/otp_verification ->verifi_button
-ProgressBar- @+id/prgbar_otpsingin -> prgbar;
+ProgressBar- @+id/prgbar_otpsingin -> prgbar
 
 
 Createpassword----->>
-EditText- @+id/new_pass ->newpass;
-EditText- @+id/confirm_pass ->confpass;
-Button- @+id/submit_new_pass ->sub_npas;
-ProgressBar- @+id/prgbar_createpass -> prgbar;
+EditText- @+id/new_pass ->newpass
+EditText- @+id/confirm_pass ->confpass
+Button- @+id/submit_new_pass ->sub_npas
+ProgressBar- @+id/prgbar_createpass -> prgbar
 
 
 login----->>
@@ -32,4 +32,28 @@ Progressbar- @+id/prgbar_login ->prgbar
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~USER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-<UNDER CONSTRACTION>
+Enternum----->>
+Edittext- @+id/ipnum ->numb ----(export to otpsingin)----> mob
+Button- @+id/otpb ->bot
+ProgressBar- @+id/prgbarnum -> prgb
+
+
+otpverifi------>>
+Editext- @+id/shownumb --------> mob
+Edittext- @+id/otpwrt ->otp
+Button- @+id/otpverifi ->verifi
+ProgressBar- @+id/prgbarotp -> prgbar
+
+
+Createpassword----->>
+EditText- @+id/newpass ->newpas;
+EditText- @+id/confirmpass ->confpas;
+Button- @+id/submpass ->submi;
+ProgressBar- @+id/prgpas -> progb
+
+
+loginu----->>
+Edittext- @+id/lognum ->log
+Edittext-@+id/logpassword ->pass
+Button- @+id/logbutton ->login
+Progressbar- @+id/prgbarlogin ->prg
