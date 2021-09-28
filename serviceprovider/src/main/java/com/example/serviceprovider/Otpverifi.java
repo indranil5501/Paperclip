@@ -29,8 +29,8 @@ public class Otpverifi extends AppCompatActivity {
         prgbar=(ProgressBar) findViewById(R.id.prgbar_otpsingin);
 
         //to get the number from singin(up) to otp verification number
-        TextView textView=findViewById(R.id.show_num);
-        textView.setText(String.format("+91-%s",getIntent().getStringExtra("mobile")));
+        TextView tew=findViewById(R.id.show_num);
+        tew.setText(String.format("+91-%s",getIntent().getStringExtra("mobile")));
 
 
 

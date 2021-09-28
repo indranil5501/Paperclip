@@ -10,25 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name="com.example.serviceprovider.Createpassword"
+            android:name=".Info"
             android:exported="true" />
         <activity
-            android:name="com.example.serviceprovider.Demone"
+            android:name=".Createpassword"
             android:exported="true" />
         <activity
-            android:name="com.example.serviceprovider.Login"
+            android:name=".Demone"
             android:exported="true" />
         <activity
-            android:name="com.example.serviceprovider.Choice"
+            android:name=".Login"
             android:exported="true" />
         <activity
-            android:name="com.example.serviceprovider.Otpverifi"
+            android:name=".Choice"
             android:exported="true" />
         <activity
-            android:name="com.example.serviceprovider.Singup"
+            android:name=".Otpverifi"
             android:exported="true" />
         <activity
-            android:name="com.example.serviceprovider.MainActivity"
+            android:name=".Singup"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

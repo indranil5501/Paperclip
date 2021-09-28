@@ -39,4 +39,20 @@
     <string name="submitt">SUBMIT</string>
     <string name="confirm">Confirm</string>
     <string name="sing_up">sing UP</string>
+    <string name="fghj">Pin code</string>
+    <string name="dfgvbhn">General Information</string>
+    <string name="sxdcvb">Shop name</string>
+    <string name="xcvbnm">Owner name</string>
+    <string name="gbn">Contract number</string>
+    <string name="dcfvbn">Address</string>
+    <string name="xdfcgvhb">Submit</string>
+    <string name="ghn">Catagory</string>
+
+
+    <string-array name="cat">
+        <item>Grocery store</item>
+        <item>Pet shop</item>
+        <item>Plumber</item>
+        <item>Carpenter</item>
+    </string-array>
 </resources>

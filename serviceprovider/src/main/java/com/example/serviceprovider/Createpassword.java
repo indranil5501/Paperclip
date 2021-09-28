@@ -33,15 +33,19 @@ public class Createpassword extends AppCompatActivity {
             public void onClick(View v) {
                 if(!newpass.getText (). toString().trim(). isEmpty()){
                     if((newpass.getText().toString().trim()).equals((confpass.getText().toString().trim()))){
+                    if((newpass.getText().toString().trim()).length()==5) {
 
                         prgbar.setVisibility(View.VISIBLE);
-                       sub_npas.setVisibility(View.INVISIBLE);
+                        sub_npas.setVisibility(View.INVISIBLE);
 
                         //write here your code for fire base.
 
 
-                       Intent intent=new Intent(getApplicationContext(), Demone.class);
-                       startActivity(intent);
+                        Intent intent = new Intent(getApplicationContext(), Info.class);
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(Createpassword.this, "PASSWORD length is not proper", Toast.LENGTH_SHORT).show();
+                    }
 
                     }else {
                         Toast.makeText(Createpassword.this, "PASSWORD not matched", Toast.LENGTH_SHORT).show();
