@@ -37,7 +37,7 @@ public class Login extends AppCompatActivity {
 
                     //write your code here for fire base
 
-                    Intent intent=new Intent(getApplicationContext(),Demone.class);
+                    Intent intent=new Intent(getApplicationContext(),Display.class);
                     startActivity(intent);
 
                     }else {

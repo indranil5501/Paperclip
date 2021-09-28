@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".About"
+            android:exported="true" />
+        <activity
+            android:name=".Comment"
+            android:exported="true" />
+        <activity
+            android:name=".Display"
+            android:exported="true" />
+        <activity
             android:name=".Info"
             android:exported="true" />
         <activity

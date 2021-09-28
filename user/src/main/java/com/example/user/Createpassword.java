@@ -38,7 +38,7 @@ public class Createpassword extends AppCompatActivity {
 
                         //write your code here for fire base
 
-                        Intent intent=new Intent(getApplicationContext(),Demone.class);
+                        Intent intent=new Intent(getApplicationContext(),Info.class);
                         startActivity(intent);
 
                         }else {
