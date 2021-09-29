@@ -7,11 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class Dashboard extends AppCompatActivity {
 
-    Button acc,edt,cmnt,us;
-    ProgressBar p1,p2,p3,p4;
+    Button acc,edt,cmnt,us,out;
+    ProgressBar p1,p2,p3,p4,p5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +23,13 @@ public class Dashboard extends AppCompatActivity {
         edt=(Button) findViewById(R.id.editt);
         cmnt=(Button) findViewById(R.id.commentbott);
         us=(Button) findViewById(R.id.aboutt);
+        out=(Button)findViewById(R.id.logouttt);
 
         p1=(ProgressBar)findViewById(R.id.prgbar1);
         p2=(ProgressBar)findViewById(R.id.prgbar2);
         p3=(ProgressBar)findViewById(R.id.prgbar3);
         p4=(ProgressBar)findViewById(R.id.prgbar4);
+        p5=(ProgressBar)findViewById(R.id.prgbar5);
 
         acc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +73,18 @@ public class Dashboard extends AppCompatActivity {
 
                 Intent intent=new Intent(getApplicationContext(),About.class);
                 startActivity(intent);
+
+            }
+        });
+        out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                p5.setVisibility(View.VISIBLE);
+                out.setVisibility(View.VISIBLE);
+
+                startActivity(new Intent(getApplicationContext(),Choice.class));
+                finish();
+                Toast.makeText(Dashboard.this, "Successfully Log Out", Toast.LENGTH_SHORT).show();
 
             }
         });

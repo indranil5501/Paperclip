@@ -9,6 +9,10 @@
         android:title="Comment"
         android:icon="@drawable/ic_baseline_insert_comment_24" />
 
+    <item android:id="@+id/dash"
+        android:title="Dash board"
+        android:icon="@drawable/ic_baseline_dashboard_24"/>
+
 
     <item android:id="@+id/about"
         android:title="About Us"
