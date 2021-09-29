@@ -39,7 +39,7 @@ public class Display extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.edit:
-                        startActivity(new Intent(getApplicationContext(),Info.class));
+                        startActivity(new Intent(getApplicationContext(),Edit.class));
                         break;
                     case R.id.comment:
                         startActivity(new Intent(getApplicationContext(),Comment.class));

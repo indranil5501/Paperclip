@@ -49,7 +49,7 @@ public class Dashboard extends AppCompatActivity {
                 p2.setVisibility(View.VISIBLE);
                 edt.setVisibility(View.VISIBLE);
 
-                Intent intent=new Intent(getApplicationContext(),Info.class);
+                Intent intent=new Intent(getApplicationContext(),Edit.class);
                 startActivity(intent);
 
             }
