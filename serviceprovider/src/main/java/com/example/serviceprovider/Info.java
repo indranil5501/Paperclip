@@ -65,7 +65,7 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
 
                         //write your code here
 
-                        Intent intent = new Intent(getApplicationContext(), Display.class);
+                        Intent intent = new Intent(getApplicationContext(), Dashboard.class);
                         startActivity(intent);
 
 

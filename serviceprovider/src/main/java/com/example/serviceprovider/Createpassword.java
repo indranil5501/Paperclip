@@ -41,7 +41,7 @@ public class Createpassword extends AppCompatActivity {
                         //write here your code for fire base.
 
 
-                        Intent intent = new Intent(getApplicationContext(), Dashboard.class);
+                        Intent intent = new Intent(getApplicationContext(), Info.class);
                         startActivity(intent);
                     }else {
                         Toast.makeText(Createpassword.this, "PASSWORD length is not proper", Toast.LENGTH_SHORT).show();
