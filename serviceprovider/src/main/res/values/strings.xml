@@ -55,4 +55,12 @@
         <item>Plumber</item>
         <item>Carpenter</item>
     </string-array>
+
+    <string-array name="pincode">
+        <item>721301</item>
+        <item>713321</item>
+        <item>713217</item>
+        <item>722055</item>
+        <item>700042</item>
+    </string-array>
 </resources>

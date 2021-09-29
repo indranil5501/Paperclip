@@ -194,18 +194,12 @@
             android:orientation="horizontal"
             android:background="@drawable/bgbox">
 
-            <EditText
-                android:id="@+id/pincode"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@null"
-                android:imeOptions="actionDone"
-                android:importantForAutofill="no"
-                android:inputType="number"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+            <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinpin"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
 
         </LinearLayout>
 
