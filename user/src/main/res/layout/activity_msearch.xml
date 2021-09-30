@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="🔍"
+                android:text=" 🔍"
                 android:textSize="30dp"
                 android:textColor="@color/black"
                 android:textStyle="bold" />
@@ -49,6 +49,7 @@
                 android:importantForAutofill="no"
                 android:textColor="@color/black"
                 android:textSize="20dp"
+                android:inputType="number"
                 android:textStyle="bold"
                 tools:ignore="TouchTargetSizeCheck,TextContrastCheck,SpeakableTextPresentCheck" />
 
@@ -190,7 +191,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="@color/purple_700"
+        android:backgroundTint="@color/white"
         android:clickable="true"
         android:contentDescription="TODO"
         android:elevation="10dp"

@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:fontFamily="@font/baloo_chettan"
-            android:text="@string/welcome"
+            android:text="Welcome to Paperclip"
             android:textColor="#0E0E0E"
             android:textSize="30sp"
             android:textAlignment="center"
@@ -44,78 +44,54 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="59dp"
             android:layout_marginTop="25dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginEnd="60dp"
+            android:layout_margin="20sp"
             android:layout_gravity="center"
             android:orientation="horizontal"
             android:background="@drawable/bgbox">
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="match_parent"
                 android:gravity="center"
                 android:textSize="30dp"
                 android:textColor="@color/black"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/lognum"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="match_parent"
                 android:hint="Phone number"
                 android:background="@null"
                 android:imeOptions="actionDone"
-
                 android:importantForAutofill="no"
                 android:inputType="number"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="30sp"
-                android:textStyle="bold"/>
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginEnd="60dp"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:background="@drawable/bgbox">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:inputType="numberPassword"
-                android:textSize="30dp"
-                android:textColor="@color/black"
                 android:textStyle="bold"
                 />
 
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_margin="20dp">
             <EditText
+                android:layout_marginTop="0dp"
                 android:id="@+id/logpassword"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:hint="@string/sdzfgyf"
-                android:background="@null"
-                android:imeOptions="actionDone"
-
-                android:importantForAutofill="no"
-                android:inputType="number"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                />
-
-
-        </LinearLayout>
+                android:layout_height="match_parent"
+                android:hint="Passwordd"
+                android:textSize="20dp"
+                android:background="@drawable/bgbox"
+                android:inputType="numberPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -123,11 +99,11 @@
 
 
             <Button
-                android:id="@+id/logbutton"
+                android:id="@+id/logbuttonu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="@string/ffhgfgnvhnv"
+                android:text="Log in"
                 android:textSize="20sp"
                 android:fontFamily="@font/baloo_chettan"
                 android:background="@drawable/bgbot"

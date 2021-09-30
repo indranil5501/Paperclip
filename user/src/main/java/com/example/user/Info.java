@@ -44,7 +44,7 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
             @Override
             public void onClick(View view) {
                 if (!sname.getText().toString().trim().isEmpty() && !add.getText().toString().trim().isEmpty()) {
-                    if ( (phnum.getText().toString().trim()).length() == 6 && (phnum.getText().toString().trim()).length() == 10 || (phnum.getText().toString().trim()).length() == 0) {
+                    if ( (pin.getText().toString().trim()).length() == 6 && (phnum.getText().toString().trim()).length() == 10 || (phnum.getText().toString().trim()).length() == 0) {
 
 
                         prg.setVisibility(View.VISIBLE);

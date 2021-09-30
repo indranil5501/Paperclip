@@ -25,7 +25,7 @@ public class Loginu extends AppCompatActivity {
 
         log=(EditText) findViewById(R.id.lognum);
         pass=(EditText) findViewById(R.id.logpassword);
-        login=(Button) findViewById(R.id.logbutton);
+        login=(Button) findViewById(R.id.logbuttonu);
         prg=(ProgressBar) findViewById(R.id.prgbarlogin);
 
 

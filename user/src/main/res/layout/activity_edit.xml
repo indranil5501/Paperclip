@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/baloo_chettan"
-            android:text="bkjbk"
+            android:text="Name"
             android:textColor="#0E0E0E"
             android:textSize="30sp"/>
 
@@ -42,7 +42,7 @@
             android:background="@drawable/bgbox">
 
             <EditText
-                android:id="@+id/shopnam"
+                android:id="@+id/uname"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@null"
@@ -55,35 +55,9 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo_chettan"
-            android:text="gkh"
-            android:textColor="#0E0E0E"
-            android:textSize="30sp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:background="@drawable/bgbox">
 
-            <EditText
-                android:id="@+id/ownnam"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@null"
-                android:imeOptions="actionDone"
-                android:importantForAutofill="no"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
-        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -110,7 +84,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/mobmain"
+                android:id="@+id/mobumain"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@null"
@@ -140,7 +114,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/mobalt"
+                android:id="@+id/mobualt"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@null"
@@ -154,35 +128,12 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo_chettan"
-            android:text="uhojin"
-            android:textColor="#0E0E0E"
-            android:textSize="30sp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:background="@drawable/bgbox">
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:id="@+id/spinca"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
-
-
-        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/baloo_chettan"
-            android:text="Shop address"
+            android:text="Address"
             android:textColor="#0E0E0E"
             android:textSize="30sp"/>
 
@@ -195,7 +146,7 @@
             android:background="@drawable/bgbox">
 
             <EditText
-                android:id="@+id/addres"
+                android:id="@+id/addu"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@null"
@@ -212,7 +163,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/baloo_chettan"
-            android:text="Pincode"
+            android:text="Defult pin code"
             android:textColor="#0E0E0E"
             android:textSize="30sp"/>
 
@@ -224,14 +175,23 @@
             android:orientation="horizontal"
             android:background="@drawable/bgbox">
 
-            <Spinner
+            <EditText
+                android:id="@+id/defpin"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:id="@+id/spinpi"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:textColor="@color/black"
                 android:textSize="20dp"
-                android:textStyle="bold"/>
+                android:inputType="number"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
 
         </LinearLayout>
+
+
+
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -239,7 +199,7 @@
 
 
             <Button
-                android:id="@+id/smitt"
+                android:id="@+id/smittu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="40dp"
@@ -252,13 +212,16 @@
 
 
             <ProgressBar
-                android:id="@+id/prgbaredit"
+                android:id="@+id/prgbareditu"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:visibility="gone"/>
 
         </FrameLayout>
+
+
+
 
 
     </LinearLayout>
