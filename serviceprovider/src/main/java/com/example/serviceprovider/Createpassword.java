@@ -38,7 +38,7 @@ public class Createpassword extends AppCompatActivity {
                         prgbar.setVisibility(View.VISIBLE);
                         sub_npas.setVisibility(View.INVISIBLE);
 
-                        //write here your code for fire base.
+                        //code for DB
 
 
                         Intent intent = new Intent(getApplicationContext(), Info.class);

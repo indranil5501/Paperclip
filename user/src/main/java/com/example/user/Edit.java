@@ -39,6 +39,8 @@ public class Edit extends AppCompatActivity {
                    prg.setVisibility(View.VISIBLE);
                    bottt.setVisibility(View.INVISIBLE);
 
+                   //code for DB
+
 
                    Intent intent=new Intent(getApplicationContext(),Dashboard.class);
                    startActivity(intent);

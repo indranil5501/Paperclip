@@ -1,21 +1,18 @@
 package com.example.user;
 
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.google.android.material.navigation.NavigationBarView;
+
 
 public class Info extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -44,13 +41,13 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
             @Override
             public void onClick(View view) {
                 if (!sname.getText().toString().trim().isEmpty() && !add.getText().toString().trim().isEmpty()) {
-                    if ( (pin.getText().toString().trim()).length() == 6 && (phnum.getText().toString().trim()).length() == 10 || (phnum.getText().toString().trim()).length() == 0) {
+                    if ((pin.getText().toString().trim()).length() == 6 && ((phnum.getText().toString().trim()).length() == 10 || (phnum.getText().toString().trim()).length() == 0)) {
 
 
                         prg.setVisibility(View.VISIBLE);
                         subu.setVisibility(View.INVISIBLE);
 
-                        //write your code here
+                        //code for DB
 
                         Intent intent = new Intent(getApplicationContext(), Msearch.class);
                         startActivity(intent);

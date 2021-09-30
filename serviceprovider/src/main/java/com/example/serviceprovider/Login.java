@@ -31,14 +31,18 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!input_number. getText (). toString().trim(). isEmpty()&&!input_password. getText (). toString().trim(). isEmpty()){
+                    if((input_number.getText().toString().trim()).length()==10&&(input_password.getText().toString().trim()).length()==5) {
 
-                    prgbar.setVisibility(View.VISIBLE);
-                    login.setVisibility(View.INVISIBLE);
+                        prgbar.setVisibility(View.VISIBLE);
+                        login.setVisibility(View.INVISIBLE);
 
-                    //write your code here for fire base
+                        //code for DB
 
-                    Intent intent=new Intent(getApplicationContext(),Dashboard.class);
-                    startActivity(intent);
+                        Intent intent = new Intent(getApplicationContext(), Dashboard.class);
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(Login.this, "PASSWORD or PHONE NUMBER is ont correct", Toast.LENGTH_SHORT).show();
+                    }
 
                     }else {
                         Toast.makeText(Login.this, "Please enter the PASSWORD", Toast.LENGTH_SHORT).show();

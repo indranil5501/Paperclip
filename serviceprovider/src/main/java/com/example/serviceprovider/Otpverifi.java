@@ -28,7 +28,7 @@ public class Otpverifi extends AppCompatActivity {
         verifi_button=(Button) findViewById(R.id.otp_verification);
         prgbar=(ProgressBar) findViewById(R.id.prgbar_otpsingin);
 
-        //to get the number from singin(up) to otp verification number
+
         TextView tew=findViewById(R.id.show_num);
         tew.setText(String.format("+91-%s",getIntent().getStringExtra("mobile")));
 
@@ -43,7 +43,7 @@ public class Otpverifi extends AppCompatActivity {
                         prgbar.setVisibility(View.VISIBLE);
                         verifi_button.setVisibility(View.INVISIBLE);
 
-                        //write here your code for fire base.
+                        //code for DB
 
 
                        Intent intent=new Intent(getApplicationContext(), Createpassword.class);

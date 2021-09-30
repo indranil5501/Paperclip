@@ -34,7 +34,7 @@ public class Enternum extends AppCompatActivity {
                         prgb.setVisibility(View.VISIBLE);
                         bot.setVisibility(View.INVISIBLE);
 
-                        //code for fire base
+                        //code for DB
 
                         Intent intent=new Intent(getApplicationContext(),Otpverifi.class);
                         intent.putExtra("mob",numb.getText().toString());

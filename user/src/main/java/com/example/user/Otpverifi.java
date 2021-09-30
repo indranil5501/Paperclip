@@ -38,7 +38,7 @@ public class Otpverifi extends AppCompatActivity {
                         prgbar.setVisibility(View.VISIBLE);
                         verifi.setVisibility(View.INVISIBLE);
 
-                        //write your code here for fire base
+                        //code for DB
 
                         Intent intent=new Intent(getApplicationContext(),Createpassword.class);
                         startActivity(intent);

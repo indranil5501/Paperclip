@@ -30,6 +30,9 @@ public class Display extends AppCompatActivity {
         pin=(TextView) findViewById(R.id.pincode);
 
 
+        //code for DB
+
+
         BottomNavigationView BottomNavigationView=findViewById(R.id.botnap);
 
         BottomNavigationView.setSelectedItemId(R.id.edit);

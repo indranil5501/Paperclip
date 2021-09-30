@@ -41,7 +41,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/mobmain"
+                android:id="@+id/spin"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@null"
@@ -74,7 +74,7 @@
 
 
                 <Button
-                    android:id="@+id/account"
+                    android:id="@+id/gs"
                     android:layout_width="135dp"
                     android:layout_height="135dp"
                     android:background="@drawable/bgbot"
@@ -84,7 +84,7 @@
                     android:textSize="20sp" />
 
                 <ProgressBar
-                    android:id="@+id/prgbar1"
+                    android:id="@+id/p1"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center"
@@ -102,7 +102,7 @@
 
 
                 <Button
-                    android:id="@+id/editt"
+                    android:id="@+id/ps"
                     android:layout_width="135dp"
                     android:layout_height="135dp"
                     android:background="@drawable/bgbot"
@@ -113,7 +113,7 @@
 
 
                 <ProgressBar
-                    android:id="@+id/prgbar2"
+                    android:id="@+id/p2"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center"
@@ -124,7 +124,7 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal"
             android:paddingTop="300dp"
             tools:ignore="MissingConstraints">
@@ -138,7 +138,7 @@
 
 
                 <Button
-                    android:id="@+id/commentbott"
+                    android:id="@+id/plm"
                     android:layout_width="135dp"
                     android:layout_height="135dp"
                     android:background="@drawable/bgbot"
@@ -148,7 +148,7 @@
                     android:textSize="19sp" />
 
                 <ProgressBar
-                    android:id="@+id/prgbar3"
+                    android:id="@+id/p3"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center"
@@ -166,7 +166,7 @@
 
 
                 <Button
-                    android:id="@+id/aboutt"
+                    android:id="@+id/car"
                     android:layout_width="135dp"
                     android:layout_height="135dp"
                     android:background="@drawable/bgbot"
@@ -177,7 +177,7 @@
 
 
                 <ProgressBar
-                    android:id="@+id/prgbar4"
+                    android:id="@+id/p4"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center"
@@ -197,10 +197,10 @@
         android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_baseline_control_point_24"
+        app:srcCompat="@drawable/ic_baseline_dashboard_24"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

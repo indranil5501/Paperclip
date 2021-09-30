@@ -37,7 +37,7 @@ public class Singup extends AppCompatActivity {
 
 
 
-                        //write here your code for fire base if not required ignore.
+                        //code for DB
 
 
 

@@ -52,7 +52,7 @@ public class Edit extends AppCompatActivity implements AdapterView.OnItemSelecte
                 prg.setVisibility(View.VISIBLE);
                 bot.setVisibility(View.INVISIBLE);
 
-                //code here
+                //code for DB
             }
         });
 

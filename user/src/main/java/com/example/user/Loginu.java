@@ -33,15 +33,18 @@ public class Loginu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(!log.getText().toString().trim().isEmpty()&& !pass.getText().toString().trim().isEmpty()){
+                    if((log.getText().toString().trim()).length()==10&&(pass.getText().toString().trim()).length()==5) {
                     prg.setVisibility(View.VISIBLE);
                     login.setVisibility(View.INVISIBLE);
 
-                    //code for firebase
+                        //code for DB
 
                     Intent intent=new Intent(getApplicationContext(),Msearch.class);
                     startActivity(intent);
-                }
-                else{
+                    }else {
+                        Toast.makeText(Loginu.this, "PASSWORD or PHONE NUMBER is ont correct", Toast.LENGTH_SHORT).show();
+                    }
+                } else{
                     Toast.makeText(Loginu.this, "Please enter required details", Toast.LENGTH_SHORT).show();
                 }
             }

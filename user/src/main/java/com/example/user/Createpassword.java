@@ -32,14 +32,18 @@ public class Createpassword extends AppCompatActivity {
             public void onClick(View view) {
                 if(!newpas.getText().toString().trim().isEmpty()){
                     if((newpas.getText().toString().trim()).equals((confpas.getText().toString().trim()))){
+                        if((newpas.getText().toString().trim()).length()==5) {
 
-                        progb.setVisibility(View.VISIBLE);
-                        submi.setVisibility(View.INVISIBLE);
+                            progb.setVisibility(View.VISIBLE);
+                            submi.setVisibility(View.INVISIBLE);
 
-                        //write your code here for fire base
+                            //write your code here for fire base
 
-                        Intent intent=new Intent(getApplicationContext(),Info.class);
-                        startActivity(intent);
+                            Intent intent = new Intent(getApplicationContext(), Info.class);
+                            startActivity(intent);
+                        }else {
+                            Toast.makeText(Createpassword.this, "PASSWORD length is not proper", Toast.LENGTH_SHORT).show();
+                        }
 
                         }else {
                         Toast.makeText(Createpassword.this, "PASSWORD not matched", Toast.LENGTH_SHORT).show();
