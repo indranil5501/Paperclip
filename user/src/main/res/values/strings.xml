@@ -24,4 +24,13 @@
     <string name="ojihgffcg">Password</string>
     <string name="lkjhgvbn">Confirm</string>
     <string name="KJHG">SUBMIT</string>
+
+
+    <string-array name="pincode">
+        <item>721301</item>
+        <item>713321</item>
+        <item>713217</item>
+        <item>722055</item>
+        <item>700042</item>
+    </string-array>
 </resources>

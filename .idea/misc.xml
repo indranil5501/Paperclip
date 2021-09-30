@@ -32,12 +32,13 @@
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_choice.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_comment.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_createpassword.xml" value="0.22239583333333332" />
-        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_dashboard.xml" value="0.264" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_dashboard.xml" value="0.2" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_display.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_edit.xml" value="0.22239583333333332" />
-        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_info.xml" value="0.176" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_info.xml" value="0.2" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_login.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_otpsingin.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_otpverifi.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_singin.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_singup.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/menu/nev.xml" value="0.22239583333333332" />
@@ -47,18 +48,34 @@
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable-v24/bgbot.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable-v24/bgbox.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable/col.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable/ic_baseline_control_point_24.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable/ic_baseline_dashboard_24.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable/ic_baseline_emoji_people_24.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable/ic_baseline_insert_comment_24.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable/ic_baseline_login_24.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/drawable/ic_launcher_background.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_about.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_choice.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_comment.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_createpassword.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_dashboard.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_demone.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_display.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_edit.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_enternum.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_info.xml" value="0.264" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_login.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_loginu.xml" value="0.2" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_main.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_mscreen.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_msearch.xml" value="0.10714285714285714" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_nscreen.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_otpverifi.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_singgup.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_singupu.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/menu/nev.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12239583333333333" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/Paperclip/user/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.12239583333333333" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/PaperclipServiceProvider/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2526041666666667" />

@@ -38,7 +38,7 @@ public class Loginu extends AppCompatActivity {
 
                     //code for firebase
 
-                    Intent intent=new Intent(getApplicationContext(),Demone.class);
+                    Intent intent=new Intent(getApplicationContext(),Msearch.class);
                     startActivity(intent);
                 }
                 else{

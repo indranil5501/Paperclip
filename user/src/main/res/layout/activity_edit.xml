@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Info"
+    tools:context=".Edit"
     android:background="@drawable/backg">
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/baloo_chettan"
-            android:text="General Indormation"
+            android:text="Edit Information"
             android:textColor="#0E0E0E"
             android:textSize="30sp"
             android:textAlignment="center"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/baloo_chettan"
-            android:text="Name"
+            android:text="bkjbk"
             android:textColor="#0E0E0E"
             android:textSize="30sp"/>
 
@@ -42,7 +42,7 @@
             android:background="@drawable/bgbox">
 
             <EditText
-                android:id="@+id/name"
+                android:id="@+id/shopnam"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@null"
@@ -55,12 +55,41 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_chettan"
+            android:text="gkh"
+            android:textColor="#0E0E0E"
+            android:textSize="30sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bgbox">
+
+            <EditText
+                android:id="@+id/ownnam"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/baloo_chettan"
-            android:text="Alternate Phone number"
+            android:text="Phone number"
             android:textColor="#0E0E0E"
             android:textSize="30sp"/>
 
@@ -81,7 +110,37 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/mobnum"
+                android:id="@+id/mobmain"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bgbox">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="+91-"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/mobalt"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="@null"
@@ -97,9 +156,33 @@
 
         <TextView
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo_chettan"
+            android:text="uhojin"
+            android:textColor="#0E0E0E"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bgbox">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/spinca"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="40dp"
             android:fontFamily="@font/baloo_chettan"
-            android:text="Address"
+            android:text="Shop address"
             android:textColor="#0E0E0E"
             android:textSize="30sp"/>
 
@@ -112,7 +195,7 @@
             android:background="@drawable/bgbox">
 
             <EditText
-                android:id="@+id/address"
+                android:id="@+id/addres"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:background="@null"
@@ -129,7 +212,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/baloo_chettan"
-            android:text="Pin code"
+            android:text="Pincode"
             android:textColor="#0E0E0E"
             android:textSize="30sp"/>
 
@@ -141,18 +224,12 @@
             android:orientation="horizontal"
             android:background="@drawable/bgbox">
 
-            <EditText
-                android:id="@+id/pinn"
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="@null"
-                android:imeOptions="actionDone"
-                android:importantForAutofill="no"
-                android:inputType="number"
-                android:textColor="@color/black"
+                android:id="@+id/spinpi"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
@@ -162,7 +239,7 @@
 
 
             <Button
-                android:id="@+id/smit"
+                android:id="@+id/smitt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="40dp"
@@ -175,7 +252,7 @@
 
 
             <ProgressBar
-                android:id="@+id/prgbarinfo"
+                android:id="@+id/prgbaredit"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="center"
