@@ -93,37 +93,7 @@
             android:textColor="#0E0E0E"
             android:textSize="30sp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:background="@drawable/bgbox">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:text="+91-"
-                android:textSize="30dp"
-                android:textColor="@color/black"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/mobmain"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@null"
-                android:imeOptions="actionDone"
-                android:importantForAutofill="no"
-                android:inputType="number"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
-
-        </LinearLayout>
-        <LinearLayout
+                <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="5dp"
@@ -154,29 +124,6 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo_chettan"
-            android:text="@string/ghn"
-            android:textColor="#0E0E0E"
-            android:textSize="30sp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:background="@drawable/bgbox">
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:id="@+id/spinca"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
-
-
-        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -208,30 +155,7 @@
 
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/baloo_chettan"
-            android:text="@string/fghj"
-            android:textColor="#0E0E0E"
-            android:textSize="30sp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-            android:background="@drawable/bgbox">
-
-            <Spinner
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:id="@+id/spinpi"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
-
-        </LinearLayout>
 
         <FrameLayout
             android:layout_width="match_parent"

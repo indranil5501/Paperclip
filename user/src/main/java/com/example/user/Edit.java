@@ -8,9 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 public class Edit extends AppCompatActivity {
-    EditText nam,mod1,mod2,add,defpin;
+    EditText nam,mod2,add,defpin;
     Button bottt;
     ProgressBar prg;
 
@@ -21,7 +22,6 @@ public class Edit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
         nam=(EditText) findViewById(R.id.uname);
-        mod1=(EditText) findViewById(R.id.mobumain);
         mod2=(EditText) findViewById(R.id.mobualt);
         add=(EditText) findViewById(R.id.addu);
        defpin=(EditText) findViewById(R.id.defpin);
@@ -34,17 +34,23 @@ public class Edit extends AppCompatActivity {
            public void onClick(View view) {
 
                if((defpin.getText().toString().trim()).length() == 6||(defpin.getText().toString().trim()).length() == 0) {
+                   if((mod2.getText().toString().trim()).length() == 10||(mod2.getText().toString().trim()).length() == 0) {
 
 
-                   prg.setVisibility(View.VISIBLE);
-                   bottt.setVisibility(View.INVISIBLE);
+                       prg.setVisibility(View.VISIBLE);
+                       bottt.setVisibility(View.INVISIBLE);
 
-                   //code for DB
+                       //code for DB
 
 
-                   Intent intent=new Intent(getApplicationContext(),Dashboard.class);
-                   startActivity(intent);
+                       Intent intent = new Intent(getApplicationContext(), Dashboard.class);
+                       startActivity(intent);
+                   }else {
+                       Toast.makeText(Edit.this, "Please enter valid number", Toast.LENGTH_SHORT).show();
+                   }
 
+               }else {
+                   Toast.makeText(Edit.this, "Please enter valid Pin code", Toast.LENGTH_SHORT).show();
                }
 
            }
