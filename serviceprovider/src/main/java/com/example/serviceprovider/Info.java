@@ -1,11 +1,9 @@
 package com.example.serviceprovider;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -15,7 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.google.android.material.navigation.NavigationBarView;
+
 
 public class Info extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     Spinner cato;
@@ -26,6 +24,8 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
     Spinner pin;
     Button subu;
     ProgressBar prg;
+    String pi,co;
+    String sel="---Select---";
 
 
     @Override
@@ -58,16 +58,9 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
             public void onClick(View view) {
                 if (!sname.getText().toString().trim().isEmpty() && !owname.getText().toString().trim().isEmpty() && !add.getText().toString().trim().isEmpty()) {
                     if ((phnum.getText().toString().trim()).length() == 10 || (phnum.getText().toString().trim()).length() == 0) {
+                        check(pi,co);
 
-
-                        prg.setVisibility(View.VISIBLE);
-                        subu.setVisibility(View.INVISIBLE);
-
-                        //code for DB
-
-                        Intent intent = new Intent(getApplicationContext(), Dashboard.class);
-                        startActivity(intent);
-
+                        //---------------------------------------------------------------
 
                     } else {
                         Toast.makeText(Info.this, "Please enter correct Phone number", Toast.LENGTH_SHORT).show();
@@ -83,13 +76,32 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
     //................X................
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        String text=adapterView.getItemAtPosition(i).toString();
+        pi=pin.getSelectedItem().toString();
+        co=cato.getSelectedItem().toString();
+
 
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+
+    public void check(String p,String c){
+        if(c.equals(sel)){
+            Toast.makeText(Info.this, "please select Catagoey", Toast.LENGTH_SHORT).show();
+        }else if(p.equals(sel)){
+            Toast.makeText(Info.this, "please select Pincode", Toast.LENGTH_SHORT).show();
+        }else{
+
+            prg.setVisibility(View.VISIBLE);
+            subu.setVisibility(View.INVISIBLE);
+
+            //spinner code for data base
+
+            Intent intent = new Intent(getApplicationContext(), Dashboard.class);
+            startActivity(intent);
+        }
     }
 }
 

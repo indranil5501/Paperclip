@@ -50,6 +50,7 @@
 
 
     <string-array name="cat">
+        <item>---Select---</item>
         <item>Grocery store</item>
         <item>Pet shop</item>
         <item>Plumber</item>
@@ -57,6 +58,7 @@
     </string-array>
 
     <string-array name="pincode">
+        <item>---Select---</item>
         <item>721301</item>
         <item>713321</item>
         <item>713217</item>
