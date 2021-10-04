@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+@SuppressWarnings("ALL")
 public class Msearch extends AppCompatActivity {
     FloatingActionButton flot;
     EditText searchpin;

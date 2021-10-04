@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+
+@SuppressWarnings("ALL")
 public class Edit extends AppCompatActivity{
 
     EditText snam,ownam,ph2,sadd;

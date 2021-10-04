@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+@SuppressWarnings("ALL")
 public class Choice extends AppCompatActivity {
 
     Button sing;

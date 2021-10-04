@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+
+@SuppressWarnings("ALL")
 public class MainActivity extends AppCompatActivity {
     Handler h=new Handler();
 

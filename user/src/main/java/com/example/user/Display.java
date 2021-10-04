@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-
+@SuppressWarnings("ALL")
 public class Display extends AppCompatActivity {
 
     TextView nam,con1,con2,add,pinset;

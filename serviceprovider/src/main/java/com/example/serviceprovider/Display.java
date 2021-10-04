@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+
+@SuppressWarnings("ALL")
 public class Display extends AppCompatActivity {
     TextView snam,onam,con1,con2,cato,sadd,pin;
 

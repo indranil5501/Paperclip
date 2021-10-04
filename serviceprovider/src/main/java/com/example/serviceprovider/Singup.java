@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+
+@SuppressWarnings("ALL")
 public class Singup extends AppCompatActivity {
     EditText enter_num;
     Button otp_bot;

@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+@SuppressWarnings("ALL")
 public class Otpverifi extends AppCompatActivity {
     EditText input_otp;
     Button verifi_button;

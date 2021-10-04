@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+@SuppressWarnings("ALL")
 public class Dashboard extends AppCompatActivity {
 
     Button acc,edt,cmnt,us,out;

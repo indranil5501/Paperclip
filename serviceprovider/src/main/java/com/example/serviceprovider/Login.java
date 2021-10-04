@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+
+@SuppressWarnings("ALL")
 public class Login extends AppCompatActivity {
 
     EditText input_number;

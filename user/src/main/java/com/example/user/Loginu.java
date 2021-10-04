@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-
+@SuppressWarnings("ALL")
 public class Loginu extends AppCompatActivity {
 
     EditText log;

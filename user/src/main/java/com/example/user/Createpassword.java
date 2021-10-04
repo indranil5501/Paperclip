@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+@SuppressWarnings("ALL")
 public class Createpassword extends AppCompatActivity {
 
     EditText newpas;

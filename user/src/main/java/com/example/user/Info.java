@@ -13,7 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 
-
+@SuppressWarnings("ALL")
 public class Info extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     EditText sname;
