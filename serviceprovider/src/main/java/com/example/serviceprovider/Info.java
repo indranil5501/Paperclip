@@ -97,7 +97,7 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
             prg.setVisibility(View.VISIBLE);
             subu.setVisibility(View.INVISIBLE);
 
-            //spinner code for data base
+            // code for data base
 
             Intent intent = new Intent(getApplicationContext(), Dashboard.class);
             startActivity(intent);
