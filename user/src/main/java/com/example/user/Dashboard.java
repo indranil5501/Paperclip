@@ -1,13 +1,13 @@
 package com.example.user;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 @SuppressWarnings("ALL")
@@ -38,6 +38,10 @@ public class Dashboard extends AppCompatActivity {
                 acc.setVisibility(View.VISIBLE);
 
                 Intent intent=new Intent(getApplicationContext(),Display.class);
+                //intent.putExtra("pin",getIntent().getStringExtra("pincode"));
+               // intent.putExtra("servicee",getIntent().getStringExtra("service"));
+                intent.putExtra("phone",getIntent().getStringExtra("ph"));
+                startActivity(intent);
                 startActivity(intent);
 
             }
@@ -50,7 +54,13 @@ public class Dashboard extends AppCompatActivity {
                 edt.setVisibility(View.VISIBLE);
 
                 Intent intent=new Intent(getApplicationContext(),Edit.class);
+                //Intent intent=new Intent(getApplicationContext(),Edit.class);
+               // intent.putExtra("pinn",getIntent().getStringExtra("pincode"));
+               //
+                // intent.putExtra("serviceee",getIntent().getStringExtra("service"));
+                intent.putExtra("phonee",getIntent().getStringExtra("ph"));
                 startActivity(intent);
+                //startActivity(intent);
 
             }
         });

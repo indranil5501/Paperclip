@@ -3,6 +3,30 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_about.xml" value="0.22146739130434784" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_choice.xml" value="0.22146739130434784" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_comment.xml" value="0.22146739130434784" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_createpassword.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_dashboard.xml" value="0.22146739130434784" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_demone.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_display.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_edit.xml" value="0.22146739130434784" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_info.xml" value="0.1598731884057971" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_login.xml" value="0.2318840579710145" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/serviceprovider/src/main/res/layout/activity_logout.xml" value="0.22192028985507245" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_carpenter.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_dashboard.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_demone.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_display.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_enternum.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_gshop.xml" value="0.2164855072463768" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_info.xml" value="0.21105072463768115" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_loginu.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_msearch.xml" value="0.23143115942028986" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_pet_shop.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_plumber.xml" value="0.21105072463768115" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/activity_thanks.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/RAJNIKA GHOSH/AndroidStudioProjects/Paperclip/user/src/main/res/layout/service_details.xml" value="0.2164855072463768" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/backg.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/bgbot.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/indra/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/bgbox.xml" value="0.2526041666666667" />

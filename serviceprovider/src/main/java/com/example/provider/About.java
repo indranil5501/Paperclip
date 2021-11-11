@@ -1,8 +1,8 @@
-package com.example.serviceprovider;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.provider;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class About extends AppCompatActivity {
 

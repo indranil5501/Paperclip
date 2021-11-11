@@ -1,7 +1,6 @@
-package com.example.serviceprovider;
+package com.example.provider;
 
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +11,16 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 
 @SuppressWarnings("ALL")
@@ -26,6 +35,8 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
     ProgressBar prg;
     String pi,co;
     String sel="---Select---";
+    FirebaseFirestore dbroot;
+
 
 
     @Override
@@ -51,6 +62,9 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         pin.setAdapter(adapter1);
         pin.setOnItemSelectedListener(this);
+        dbroot = FirebaseFirestore.getInstance();
+
+    // String phone=  getIntent().getStringExtra("mobile");
 
 
         subu.setOnClickListener(new View.OnClickListener() {
@@ -97,10 +111,41 @@ public class Info extends AppCompatActivity implements AdapterView.OnItemSelecte
             prg.setVisibility(View.VISIBLE);
             subu.setVisibility(View.INVISIBLE);
 
-            // code for data base
+           // String phone=  getIntent().getStringExtra("mobile");
+           // Bundle b2= getIntent().getExtras();
+          //  String phone = b2.getString(("mobile"));
 
-            Intent intent = new Intent(getApplicationContext(), Dashboard.class);
-            startActivity(intent);
+            Map<String, Object> data = new HashMap<>();
+            data.put("name", owname.getText().toString());
+            data.put("service", co);
+            data.put("alternative", phnum.getText().toString());
+            data.put("phone", getIntent().getStringExtra("mobile"));
+            data.put("shop", sname.getText().toString());
+            data.put("Address", add.getText().toString());
+            data.put("pincode", pi);
+
+            //Intent intent = new Intent(getApplicationContext(), Dashboard.class);
+           // startActivity(intent);
+
+            dbroot.collection("Service provider").document(getIntent().getStringExtra("mobile"))
+                    .set(data)
+                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                        @Override
+                        public void onSuccess(Void unused) {
+                            Toast.makeText(Info.this, "data added", Toast.LENGTH_SHORT).show();
+                            Intent i=  new Intent(getApplicationContext(),Dashboard.class);
+                            i.putExtra("ph",getIntent().getStringExtra("mobile"));
+                            i.putExtra("pincode",pi);
+                            i.putExtra("service",co);
+                            startActivity(i);
+                        }
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(Info.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
         }
     }
 }

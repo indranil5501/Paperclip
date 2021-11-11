@@ -1,4 +1,4 @@
-package com.example.user;
+package com.example.provider;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,63 +19,63 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
-
 @SuppressWarnings("ALL")
 public class Otpverifi extends AppCompatActivity {
-    EditText otp;
-    Button verifi;
-    TextView num;
+    EditText input_otp;
+    Button verifi_button;
     ProgressBar prgbar;
+    private String otp;
+    // private FirebaseAuth mAuth;
     private FirebaseAuth firebaseAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otpverifi);
 
-        otp=(EditText) findViewById(R.id.otpwrt);
-        verifi=(Button) findViewById(R.id.otpverifi);
-        num=(TextView) findViewById(R.id.shownumb);
-        prgbar=(ProgressBar) findViewById(R.id.prgbarotp);
+
+        input_otp = (EditText) findViewById(R.id.write_otp);
+        verifi_button = (Button) findViewById(R.id.otp_verification);
+        prgbar = (ProgressBar) findViewById(R.id.prgbar_otpsingin);
+
+
+        TextView tew = findViewById(R.id.show_num);
+        tew.setText(String.format("+91-%s", getIntent().getStringExtra("mobile")));
 
         firebaseAuth = FirebaseAuth.getInstance();
+
         String OTP = getIntent().getStringExtra("auth");
+    // String  phone= getIntent().getStringExtra("mobile")
 
-        num.setText(String.format("+91-%s",getIntent().getStringExtra("mob")));
 
-        verifi.setOnClickListener(new View.OnClickListener() {
+        verifi_button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                String verification_code = otp.getText().toString();
-                if(!otp.getText().toString().trim().isEmpty()){
-                    if((otp.getText().toString().trim()).length()==6){
+            public void onClick(View v) {
+                String verification_code = input_otp.getText().toString();
+                if (!input_otp.getText().toString().trim().isEmpty()) {
+                    if ((input_otp.getText().toString().trim()).length() == 6) {
 
                         prgbar.setVisibility(View.VISIBLE);
-                        verifi.setVisibility(View.INVISIBLE);
+                        verifi_button.setVisibility(View.INVISIBLE);
 
                         //code for DB
-
                         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(OTP, verification_code);
                         signIn(credential);
 
-                       // Intent intent=new Intent(getApplicationContext(),Createpassword.class);
+
+                        //Intent intent=new Intent(getApplicationContext(), Createpassword.class);
                        // startActivity(intent);
-                    }else{
-                        Toast.makeText(Otpverifi.this, "NOT MATCHED", Toast.LENGTH_SHORT).show();
+
+                    } else {
+                        Toast.makeText(Otpverifi.this, "NOT MATCHING CHECK AGAIN", Toast.LENGTH_SHORT).show();
                     }
-                }else {
+
+                } else {
                     Toast.makeText(Otpverifi.this, "PLEASE ENTER OTP", Toast.LENGTH_SHORT).show();
                 }
             }
-
-
-
-
         });
-
-
-
-
     }
 
     private void signIn(PhoneAuthCredential credential) {
@@ -86,16 +86,22 @@ public class Otpverifi extends AppCompatActivity {
                     //sendToMain();
                     //Toast.makeText(Otpverifi.this, "log in", Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(getApplicationContext(), Createpassword.class);
-                   // intent.putExtra("mobilee",getIntent().getStringExtra("mobile"));
+                    intent.putExtra("mobilee",getIntent().getStringExtra("mobile"));
                     startActivity(intent);
                 } else {
 
                    // Toast.makeText(Otpverifi.this,task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                     Intent intent=new Intent(getApplicationContext(), Createpassword.class);
-                    intent.putExtra("mobilee",getIntent().getStringExtra("mobile"));
-                     startActivity(intent);
+                   Intent intent=new Intent(getApplicationContext(), Createpassword.class);
+                   intent.putExtra("mobilee",getIntent().getStringExtra("mobile"));
+                   startActivity(intent);
                 }
             }
+
         });
+
+
+
     }
+
+
 }

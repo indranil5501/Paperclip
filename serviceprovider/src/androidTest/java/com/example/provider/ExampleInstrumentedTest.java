@@ -1,4 +1,4 @@
-package com.example.serviceprovider;
+package com.example.provider;
 
 import android.content.Context;
 

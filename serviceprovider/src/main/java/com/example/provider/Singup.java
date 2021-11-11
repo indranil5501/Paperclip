@@ -1,4 +1,5 @@
-package com.example.user;
+package com.example.provider;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,64 +23,63 @@ import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
-
-@SuppressWarnings("ALL")
-public class Enternum extends AppCompatActivity {
-
-    EditText numb;
-    Button bot;
-    ProgressBar prgb;
-
+public class Singup extends AppCompatActivity {
+    EditText enter_num;
+    Button otp_bot;
+    ProgressBar prgbar;
     private FirebaseAuth auth;
-    // public static String phone;
+   // public static String phone;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallBacks;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_enternum);
-
+        setContentView(R.layout.activity_singup);
         auth = FirebaseAuth.getInstance();
 
-        numb=(EditText) findViewById(R.id.ipnum);
-        bot=(Button) findViewById(R.id.otpb);
-        prgb=(ProgressBar) findViewById(R.id.prgbarnum);
 
-        bot.setOnClickListener(new View.OnClickListener() {
+        enter_num =(EditText) findViewById(R.id.input_num);
+        otp_bot =(Button) findViewById (R.id.otp_bot);
+        prgbar=(ProgressBar) findViewById(R.id.prgbar_singin);
+
+
+
+        otp_bot.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
 
-                String phone = numb.getText().toString();
+                String phone = enter_num.getText().toString();
                 String phoneNumber = "+91"  + phone;
-                if(!numb. getText (). toString().trim(). isEmpty()){
-                    if((numb.getText().toString().trim()).length()==10){
+                if(!enter_num. getText (). toString().trim(). isEmpty()){
+                    if((enter_num.getText().toString().trim()).length()==10){
 
-                        prgb.setVisibility(View.VISIBLE);
-                        bot.setVisibility(View.INVISIBLE);
+                        prgbar.setVisibility(View.VISIBLE);
+                        otp_bot.setVisibility(View.INVISIBLE);
 
 
 
+                        //code for DB
                         PhoneAuthOptions options = PhoneAuthOptions.newBuilder(auth)
-                                        .setPhoneNumber(phoneNumber)
-                                        .setTimeout(60L , TimeUnit.SECONDS)
-                                        .setActivity(Enternum.this)
-                                        .setCallbacks(mCallBacks)
-                                        .build();
-                                PhoneAuthProvider.verifyPhoneNumber(options);
+                                .setPhoneNumber(phoneNumber)
+                                .setTimeout(60L , TimeUnit.SECONDS)
+                                .setActivity(Singup.this)
+                                .setCallbacks(mCallBacks)
+                                .build();
+                        PhoneAuthProvider.verifyPhoneNumber(options);
 
 
-                                //code for DB
 
-                        //Intent intent=new Intent(getApplicationContext(),Otpverifi.class);
-                       // intent.putExtra("mob",numb.getText().toString());
-                      //  startActivity(intent);
+                     // Intent intent=new Intent(getApplicationContext(),Otpverifi.class);
+                      //intent.putExtra("mobile",enter_num.getText().toString());
+                      //startActivity(intent);
 
-
-                    }else{
-                        Toast.makeText(Enternum.this, "Please enter connect number", Toast.LENGTH_SHORT).show();
+                    }else {
+                        Toast.makeText(Singup.this, "Please enter correct number", Toast.LENGTH_SHORT).show();
                     }
-                }else{
-                    Toast.makeText(Enternum.this, "Enter the number", Toast.LENGTH_SHORT).show();
+
+                }else {
+                    Toast.makeText(Singup.this, "Enter the number", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -92,7 +92,7 @@ public class Enternum extends AppCompatActivity {
 
             @Override
             public void onVerificationFailed(@NonNull FirebaseException e) {
-                Toast.makeText(Enternum.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(Singup.this, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -101,14 +101,14 @@ public class Enternum extends AppCompatActivity {
 
                 //sometime the code is not detected automatically
                 //so user has to manually enter the code
-                Toast.makeText(Enternum.this, "otp sent", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Singup.this, "otp sent", Toast.LENGTH_SHORT).show();
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         {
-                            Intent otpIntent = new Intent(Enternum.this, Otpverifi.class);
+                            Intent otpIntent = new Intent(Singup.this, Otpverifi.class);
                             otpIntent.putExtra("auth", s);
-                            otpIntent.putExtra("mobile",numb.getText().toString());
+                            otpIntent.putExtra("mobile",enter_num.getText().toString());
                             startActivity(otpIntent);
                         }
                     }
@@ -128,11 +128,10 @@ public class Enternum extends AppCompatActivity {
                 if (task.isSuccessful()){
 
                 }else{
-                    Toast.makeText(Enternum.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Singup.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                 }
             }
         });
-
 
 
 
