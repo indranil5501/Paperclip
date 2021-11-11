@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "337012460933",
+    "project_id": "paperclip-57f32",
+    "storage_bucket": "paperclip-57f32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337012460933:android:7d91ca09b46605177888ec",
+        "android_client_info": {
+          "package_name": "com.example.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337012460933-q10tvqq23is3326o3ga6sioj7eilmsn0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlfCimnr5Pt0qzE-QmG_qRBrAO6uDeZ74"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337012460933-q10tvqq23is3326o3ga6sioj7eilmsn0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

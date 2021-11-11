@@ -1,6 +1,4 @@
-package com.example.serviceprovider;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.provider;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,11 +7,18 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+
 @SuppressWarnings("ALL")
 public class Dashboard extends AppCompatActivity {
 
     Button acc,edt,cmnt,us,out;
     ProgressBar p1,p2,p3,p4,p5;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,9 @@ public class Dashboard extends AppCompatActivity {
                 acc.setVisibility(View.VISIBLE);
 
                 Intent intent=new Intent(getApplicationContext(),Display.class);
+                intent.putExtra("pin",getIntent().getStringExtra("pincode"));
+                intent.putExtra("servicee",getIntent().getStringExtra("service"));
+                intent.putExtra("phone",getIntent().getStringExtra("ph"));
                 startActivity(intent);
 
             }
@@ -51,6 +59,9 @@ public class Dashboard extends AppCompatActivity {
                 edt.setVisibility(View.VISIBLE);
 
                 Intent intent=new Intent(getApplicationContext(),Edit.class);
+                intent.putExtra("pinn",getIntent().getStringExtra("pincode"));
+                intent.putExtra("serviceee",getIntent().getStringExtra("service"));
+                intent.putExtra("phonee",getIntent().getStringExtra("ph"));
                 startActivity(intent);
 
             }
@@ -80,12 +91,24 @@ public class Dashboard extends AppCompatActivity {
         out.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                p5.setVisibility(View.VISIBLE);
-                out.setVisibility(View.VISIBLE);
+               // p5.setVisibility(View.VISIBLE);
+               // out.setVisibility(View.VISIBLE);
+                mAuth = FirebaseAuth.getInstance();
 
-                startActivity(new Intent(getApplicationContext(),Choice.class));
-                finish();
-                Toast.makeText(Dashboard.this, "Successfully Log Out", Toast.LENGTH_SHORT).show();
+                FirebaseUser user = mAuth.getCurrentUser();
+                if(user != null )
+                {
+                    mAuth.signOut();
+                    Toast.makeText(Dashboard.this, "Successfully Log Out", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+                // Intent intent = new Intent(getApplicationContext(),Logout.class);
+                //startActivity(new Intent(getApplicationContext(),Logout.class));
+                //finish();
+                //startActivity(intent);
+                //Toast.makeText(Dashboard.this, "Successfully Log Out", Toast.LENGTH_SHORT).show();
 
             }
         });

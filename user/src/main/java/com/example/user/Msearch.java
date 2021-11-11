@@ -1,7 +1,5 @@
 package com.example.user;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -45,7 +45,8 @@ public class Msearch extends AppCompatActivity {
                             pg1.setVisibility(View.VISIBLE);
                             gshop.setVisibility(View.VISIBLE);
 
-                            Intent intent = new Intent(getApplicationContext(), Demone.class);
+                            Intent intent = new Intent(getApplicationContext(), Gshop.class);
+                            intent.putExtra("pin",searchpin.getText().toString());
                             startActivity(intent);
 
                         }else{
@@ -61,7 +62,8 @@ public class Msearch extends AppCompatActivity {
                             pg2.setVisibility(View.VISIBLE);
                             pshop.setVisibility(View.VISIBLE);
 
-                            Intent intent = new Intent(getApplicationContext(), Demone.class);
+                            Intent intent = new Intent(getApplicationContext(), PetShop.class);
+                            intent.putExtra("pinn",searchpin.getText().toString());
                             startActivity(intent);
 
                         }else{
@@ -77,7 +79,8 @@ public class Msearch extends AppCompatActivity {
                             pg3.setVisibility(View.VISIBLE);
                             plumb.setVisibility(View.VISIBLE);
 
-                            Intent intent = new Intent(getApplicationContext(), Demone.class);
+                            Intent intent = new Intent(getApplicationContext(), Plumber.class);
+                            intent.putExtra("pi",searchpin.getText().toString());
                             startActivity(intent);
 
                         }else{
@@ -93,7 +96,8 @@ public class Msearch extends AppCompatActivity {
                             pg4.setVisibility(View.VISIBLE);
                             carp.setVisibility(View.VISIBLE);
 
-                            Intent intent = new Intent(getApplicationContext(), Demone.class);
+                            Intent intent = new Intent(getApplicationContext(), Carpenter.class);
+                            intent.putExtra("pinc",searchpin.getText().toString());
                             startActivity(intent);
 
                         }else{
@@ -114,6 +118,7 @@ public class Msearch extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),Dashboard.class);
+                intent.putExtra("ph",getIntent().getStringExtra("phh"));
                 startActivity(intent);
             }
         });

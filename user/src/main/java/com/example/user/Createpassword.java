@@ -1,7 +1,5 @@
 package com.example.user;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +7,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @SuppressWarnings("ALL")
 public class Createpassword extends AppCompatActivity {
@@ -28,6 +36,8 @@ public class Createpassword extends AppCompatActivity {
         submi=(Button) findViewById(R.id.submpass);
         progb=(ProgressBar) findViewById(R.id.prgpass);
 
+        FirebaseFirestore dbroot =  FirebaseFirestore.getInstance();
+
         submi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,8 +50,34 @@ public class Createpassword extends AppCompatActivity {
 
                             //write your code here for fire base
 
-                            Intent intent = new Intent(getApplicationContext(), Info.class);
-                            startActivity(intent);
+
+                            Map<String, Object> data = new HashMap<>();
+                            data.put("password", newpas.getText().toString());
+                            data.put("phone",getIntent().getStringExtra("mobilee"));
+
+                           dbroot.collection("U log in").document(getIntent().getStringExtra("mobilee"))
+                                    .set(data)
+                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void unused) {
+                                            Toast.makeText(Createpassword.this, "data added", Toast.LENGTH_SHORT).show();
+                                            Intent i=  new Intent(getApplicationContext(),Info.class);
+
+                                            i.putExtra("mobile",getIntent().getStringExtra("mobilee"));
+
+                                            // i.putExtra("service",co);
+                                            startActivity(i);
+                                        }
+                                    })
+                                    .addOnFailureListener(new OnFailureListener() {
+                                        @Override
+                                        public void onFailure(@NonNull Exception e) {
+                                            Toast.makeText(Createpassword.this, "failed", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+
+                          //  Intent intent = new Intent(getApplicationContext(), Info.class);
+                          //  startActivity(intent);
                         }else {
                             Toast.makeText(Createpassword.this, "PASSWORD length is not proper", Toast.LENGTH_SHORT).show();
                         }
