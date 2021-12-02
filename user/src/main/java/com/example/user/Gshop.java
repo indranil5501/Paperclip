@@ -20,7 +20,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Gshop extends AppCompatActivity {
-
+ /////////////////////////////
+   public RecyclerView recvie;
+    ArrayList<model> datalist;
+    gsadapter adapter;
+//////////////////////////////////
 
     private RecyclerView courseRV;
     private ArrayList<Details> coursesArrayList;
@@ -35,6 +39,15 @@ public class Gshop extends AppCompatActivity {
 
         courseRV = findViewById(R.id.idRVCourses);
         loadingPB = findViewById(R.id.idProgressBar);
+
+        //////////////////////////////////////////////////////////////////
+        recvie =(RecyclerView)findViewById(R.id.revier);
+        recvie.setLayoutManager(new LinearLayoutManager(this));
+        datalist= new ArrayList<>();
+        adapter=new gsadapter(datalist);
+        recvie.setAdapter(adapter);
+        /////////////////////////////////////////////////////////////////////
+
 
         // initializing our variable for firebase
         // firestore and getting its instance.

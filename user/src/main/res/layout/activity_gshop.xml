@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gshop"
-        android:textSize="30"
+        android:textColor="@color/black"
+        android:textSize="30dp"
         android:textAlignment="center"/>
 
     <!--Recycler view for displaying
