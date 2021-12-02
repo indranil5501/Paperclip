@@ -4,17 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     tools:context=".Gshop">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gshop"
+        android:textSize="30"
+        android:textAlignment="center"/>
 
     <!--Recycler view for displaying
         our data from Firestore-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVCourses"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
 
     <!--Progress bar for showing loading screen-->
-    <ProgressBar
+   <ProgressBar
         android:id="@+id/idProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
