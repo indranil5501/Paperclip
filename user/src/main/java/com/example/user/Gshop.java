@@ -41,7 +41,7 @@ public class Gshop extends AppCompatActivity {
         loadingPB = findViewById(R.id.idProgressBar);
 
         //////////////////////////////////////////////////////////////////
-        recvie =(RecyclerView)findViewById(R.id.revier);
+        recvie =(RecyclerView)findViewById(R.id.revier); ////////////////bujhat PARCHI NA KANO
         recvie.setLayoutManager(new LinearLayoutManager(this));
         datalist= new ArrayList<>();
         adapter=new gsadapter(datalist);
