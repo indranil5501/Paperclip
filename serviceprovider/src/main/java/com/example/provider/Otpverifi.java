@@ -90,10 +90,8 @@ public class Otpverifi extends AppCompatActivity {
                     startActivity(intent);
                 } else {
 
-                   // Toast.makeText(Otpverifi.this,task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                   Intent intent=new Intent(getApplicationContext(), Createpassword.class);
-                   intent.putExtra("mobilee",getIntent().getStringExtra("mobile"));
-                   startActivity(intent);
+                    Toast.makeText(Otpverifi.this,task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+
                 }
             }
 
